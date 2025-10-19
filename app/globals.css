@@ -1,5 +1,5 @@
-@tailwind base;
-@tailwind components;
+@import "tailwindcss";
+
 @tailwind utilities;
 
 @layer base {
@@ -206,27 +206,27 @@ body {
 
   /* SHADCN OVERRIDES */
   .select-field {
-    @apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+    @apply w-full h-[54px]  rounded-full  px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent;
   }
 
   .input-field {
-    @apply bg-grey-50 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+    @apply h-[54px] focus-visible:ring-offset-0  rounded-full  px-4 py-3 border-none focus-visible:ring-transparent;
   }
 
   .textarea {
-    @apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
+    @apply flex flex-1   px-5 py-3 border-none focus-visible:ring-transparent;
   }
 
   .button {
-    @apply rounded-full h-[54px] p-regular-16;
+    @apply rounded-full h-[54px];
   }
 
   .select-item {
-    @apply py-3 cursor-pointer  focus:bg-primary-50;
+    @apply py-3 cursor-pointer;
   }
 
   .toggle-switch {
-    @apply bg-gray-300 !important;
+    @apply bg-gray-300;
   }
 }
 
@@ -244,7 +244,7 @@ body {
 }
 
 .cl-userButtonPopoverCard {
-  right: 4px !important;
+  right: 4px;
 }
 
 .cl-formButtonPrimary:hover,
@@ -266,11 +266,11 @@ body {
 }
 
 .react-datepicker__day--selected {
-  background-color: #624cf5 !important;
-  color: #ffffff !important;
+  background-color: #624cf5;
+  color: #ffffff;
   border-radius: 4px;
 }
 
 .react-datepicker__time-list-item--selected {
-  background-color: #624cf5 !important;
+  background-color: #624cf5;
 }

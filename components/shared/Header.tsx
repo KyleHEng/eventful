@@ -17,7 +17,7 @@ const Header = () => {
             height={38}
           ></Image>
         </Link>
-        <nav className="sm:flex-between  w-full max-w-xs">
+        <nav className="md:flex-between  w-full max-w-xs hidden md:block">
           <NavItems></NavItems>
         </nav>
         <SignedOut>
