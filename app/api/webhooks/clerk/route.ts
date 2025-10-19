@@ -37,9 +37,9 @@ export async function POST(req: NextRequest) {
       };
       const newUser = await createUser(user);
       if (newUser) {
-        const client = await clerkClient();
-
-        await client.users.updateUserMetadata(id, {
+        await (
+          await clerkClient()
+        ).users.updateUserMetadata(id, {
           publicMetadata: {
             userId: newUser._id,
           },
